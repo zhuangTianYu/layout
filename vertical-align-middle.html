@@ -1,0 +1,41 @@
+<!-- html -->
+<div class="container">
+  <div class="inner"></div>
+</div>
+
+<!-- reset.css -->
+<link rel="stylesheet" href="./style/reset.css">
+
+<style>
+  body {
+    text-align: center;
+  }
+
+  .container {
+    display: inline-block;
+    margin-top: 100px;
+    width: 600px;
+    height: 300px;
+    background-color: lightblue;
+  }
+
+  .container::after,
+  .inner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .container::after {
+    content: "";
+    width: 0;
+    height: 100%;
+  }
+
+  .inner {
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+  }
+</style>
+
+
