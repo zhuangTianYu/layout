@@ -1,0 +1,35 @@
+<!-- html -->
+<div class="container">
+  <div class="loading"></div>
+</div>
+
+<!-- reset.css -->
+<link rel="stylesheet" href="./style/reset.css">
+
+<style>
+  .container {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("./asset/loading.png");
+    background-size: 100% 100%;
+    animation: loading 1s linear 0s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
